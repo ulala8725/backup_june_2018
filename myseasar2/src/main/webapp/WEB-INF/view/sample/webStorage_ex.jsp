@@ -64,7 +64,8 @@
           localStorage.clear();
           loadMsg();
       }
-      window.onload = loadMsg();
+      window.onload = localStorage.clear();
+//       window.onload = loadMsg();
   </script>
 </body>
 </html>
