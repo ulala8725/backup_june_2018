@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>履歴書のサンプル</title>
+</head>
+<body>
+<script>
+function payRange(){
+	var pay = document.getElementById("pay");
+	var payValue = document.getElementById("payValue");
+	payValue.innerHTML = pay.value + "万円";
+}
+
+function resetPayValue(){
+	var payValue = document.getElementById("payValue");
+	payValue.innerHTML = "";
+}
+
+function inputTextarea(){
+	var textarea = document.getElementById("textarea");
+	var hidden = document.getElementById("hidden");
+	hidden.value = textarea.value;
+}
+</script>
+<form method="get" action="ExResumeShow.html" target="_blank">
+	<fieldset>
+	<legend>必修項目</legend>　<!-- fieldsetの名前 -->
+		<table>
+		<!-- <caption>履歴書のサンプル</caption>　 <!-- tableの名前 -->
+			<tr>
+				<td>名前</td>
+				<td><input type="text" name="name" placeholder="名前入力" required autofocus /></td>
+			</tr>
+			<tr>
+				<td>性別</td>
+				<td>
+				<input type="radio" name="gender" value="male" checked required/>男
+				<input type="radio" name="gender" value="female" required/>女
+				</td>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td>
+				<input type="text" id="id" name="id" placeholder="ID入力 5~12文字" required />
+				<button onclick="idCheck()">重複確認</button>
+				</td>
+			</tr>
+			<tr>
+				<td>password</td>
+				<td><input type="password" name="password" placeholder="パスワード入力 7~12文字" required /></td>
+			</tr>
+			<tr>
+				<td>e-mail</td>
+				<td><input type="email" name="email" placeholder="e-mail入力" required /></td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset>
+		<legend>選択入力</legend>
+		<table>
+			<tr>
+				<td>住所</td>
+				<td><input type="text" name="address" placeholder="住所入力"/></td>
+			</tr>
+			<tr>
+				<td>生年月日</td>
+				<td><input type="date" name="birth" /></td>
+			</tr>
+			<tr>
+				<td>携帯電話</td>
+				<td>
+				<select name="mobile">
+					<option value="docomo">docomo</option>
+					<option value="au">au</option>
+					<option value="softbank">softbank</option>
+					<option value="etc">その他</option>
+				</select>
+				<input type="tel" name="mobile_number" placeholder="'-'なしに入力" /> 
+				</td>
+			</tr>
+			<tr>
+				<td>家族構成</td>
+				<td><input type="number" name="family_number" placeholder="最大10名" min="1" max="10"/></td>
+			</tr>
+			<tr>
+				<td>資格証</td>
+				<td>
+				<input type="checkbox" name="certification" value="JLPT"/>JLPT
+				<input type="checkbox" name="certification" value="TOEIC"/>TOEIC
+				<input type="checkbox" name="certification" value="HSK"/>HSK
+				</td>
+			</tr>
+			<tr>
+				<td>希望給料(年)</td>
+				<td>
+				(範囲:1~1000万円)
+				<input type="range" id="pay" name="pay" min="1" max="1000" oninput="payRange()" />
+				<span id="payValue"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>自己紹介</td>
+				<td>
+				<textarea id="textarea" onkeyup="inputTextarea()" cols="30" rows="10" placeholder="300字以上" style="resize:none;"></textarea>
+				<input type="hidden" id="hidden" name="self_intro" />
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	<input type="reset" value="クリア" onclick="resetPayValue()"/>
+	<input type="submit" value="提出" />
+</form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>入力した履歴書の表示</title>
+</head>
+<body>
+<script>
+window.onload = function(){
+	/* file:///C:/Users/kim.sunhye/workspace/studyJS/WebContent/WEB-INF
+	/ExResumeShow.html?name=111&gender=male&id=111&password=111
+	&email=111%40111&address=&birth=&mobile=docomo&mobile_number=
+	&family_number=&pay=501 */
+	var temp = location.href.split("?");
+	var data = temp[1].split("&");
+	var str = "<table border='1'>";
+	for (var i = 0; i < data.length; i++) {
+		var value = data[i].split("=");
+		if (value[0] == "name") {
+			value[0] = "名前";
+		}
+		if (value[0] == "gender") {
+			value[0] = "性別";
+		}
+		if (value[0] == "id") {
+			value[0] = "ID";
+		}
+		if (value[0] == "email") {
+			//email=111%40111 -> 111@111
+			var valueTemp = value[1].split("%40");
+			value[1] = valueTemp[0] + "@" + valueTemp[1];
+		}
+		if (value[0] == "address") {
+			value[0] = "住所";
+		}
+		if (value[0] == "birth") {
+			value[0] = "生年月日";
+		}
+		if (value[0] == "mobile") {
+			value[0] = "携帯-通信社";
+		}
+		if (value[0] == "mobile_number") {
+			value[0] = "携帯-番号";
+		}
+		if (value[0] == "family_number") {
+			value[0] = "家族構成";
+		}
+		if (value[0] == "certification") {
+			value[0] = "資格証";
+		}
+		if (value[0] == "pay") {
+			value[0] = "希望給料(年)";
+			value[1] += "万円";
+		}
+		if (value[0] == "self_intro") {
+			value[0] = "自己紹介";
+		}
+		str += "<tr><td>" + value[0] + "</td><td>" + value[1] + "</td></tr>";
+	}// for
+	str += "</table>";
+	var showResume = document.getElementById("showResume");
+	showResume.innerHTML = str;
+}// function
+</script>
+<div id="showResume"></div>
+
+</body>
+</html>

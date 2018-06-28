@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>bubbling</title>
+</head>
+<body>
+<script>
+var target = this;
+
+function divClick(){
+// 	alert(target.event.type)
+	alert("div")
+}
+function pClick(){
+	alert("p")
+}
+function spanClick(){
+	alert("span")
+ 	target.event.stopPropagation();
+}
+</script>
+<div id="div" onclick="divClick()">
+	DIV
+	<p id="p" onclick="pClick()">
+		P<br>
+		<span id="span" onclick="spanClick()">SPAN</span>
+	</p>
+</div>
+
+<div id="console"></div>
+</body>
+</html>
