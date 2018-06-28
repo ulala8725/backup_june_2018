@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//SEASAR//DTD S2Container 2.4//EN" 
+	"http://www.seasar.org/dtd/components24.dtd">
+<components>
+	<component class="org.seasar.framework.convention.impl.NamingConventionImpl">
+		<initMethod name="addRootPackageName">
+			<arg>"myseasar2"</arg>
+		</initMethod>
+	</component>
+	<component class="org.seasar.framework.convention.impl.PersistenceConventionImpl"/>
+	
+	<!-- actionPathNamingRuleの設定 
+    <component name="actionPathNamingRule"
+  		class="org.seasar.struts.lessconfig.config.rule.impl.SubApplicationActionPathNamingRule"/>
+    -->
+  <!-- actionFormNamingRuleの設定 
+  	<component name="actionFormNamingRule"
+  		class="org.seasar.struts.lessconfig.config.rule.impl.SubApplicationActionFormNamingRule"/>
+  -->	
+
+  <!-- コンポーネントの自動登録
+	<component class="org.seasar.framework.container.autoregister.FileSystemComponentAutoRegister">
+		<property name="instanceDef">
+	    	@org.seasar.framework.container.deployer.InstanceDefFactory@REQUEST
+	    </property>
+		<property name="autoNaming">
+			<component class="org.seasar.framework.container.autoregister.DefaultAutoNaming" />
+		</property>
+		<initMethod name="addClassPattern">
+			<arg>"myseasar2.action"</arg> 
+			<arg>".*Action"</arg> 
+		</initMethod>
+		<initMethod name="addClassPattern">
+			<arg>"myseasar2.form"</arg> 
+			<arg>".*Form"</arg> 
+		</initMethod>
+		<initMethod name="addClassPattern">
+			<arg>"myseasar2.service"</arg> 
+			<arg>".*Service"</arg> 
+		</initMethod>
+		<initMethod name="addInterfacePattern">
+			<arg>"myseasar2.dao"</arg> 
+			<arg>".*Dao"</arg> 
+		</initMethod>
+	</component>
+	-->
+</components>
