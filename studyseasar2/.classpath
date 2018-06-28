@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="/s2dao-tiger-1.0.x/lib/s2-dao-tiger-1.0.51.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/aopalliance-1.0.jar" sourcepath="/seasar2/lib/sources/aopalliance-1.0-sources.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/geronimo-ejb_2.1_spec-1.0.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/geronimo-j2ee_1.4_spec-1.0.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/geronimo-jta_1.1_spec-1.0-tsr.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/geronimo-jta_1.1_spec-1.0.jar" sourcepath="/seasar2/lib/sources/geronimo-jta_1.1_spec-1.0-sources.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/javassist-3.4.ga.jar" sourcepath="/seasar2/lib/sources/javassist-3.4.ga-sources.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/junit-3.8.2.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/junit-addons-1.4.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/ognl-2.6.9-patch-20090427.jar" sourcepath="/seasar2/lib/sources/ognl-2.6.9-patch-20090427-sources.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/portlet-api-1.0.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/s2-extension-2.4.48.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/s2-framework-2.4.48.jar"/>
+	<classpathentry kind="lib" path="/s2dao-1.0.x/lib/s2-dao-1.0.51.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kim.sunhye/Desktop/JAVA/Seasar2/S2.4.48.zip"/>
+	<classpathentry kind="lib" path="C:/Users/kim.sunhye/Desktop/JAVA/Seasar2/s2-dao-1.0.51.zip"/>
+	<classpathentry kind="lib" path="/seasar2/lib/hsqldb-1.8.0.1.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/poi-3.0-FINAL.jar"/>
+	<classpathentry kind="lib" path="/seasar2/lib/uow_api-6.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.5"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_101">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<site>
+
+
+<feature version="1.2.6" id="org.seasar.mayaa.matatabi.feature" url="features/org.seasar.mayaa.matatabi.feature_1.2.6.jar">
+
+<category name="Matatabi"/>
+
+</feature>
+
+
+<feature version="1.2.7" id="org.seasar.mayaa.matatabi.feature" url="features/org.seasar.mayaa.matatabi.feature_1.2.7.jar">
+
+<category name="Matatabi"/>
+
+</feature>
+
+
+<feature version="0.0.5" id="org.seasar.resource.synchronizer.feature" url="features/org.seasar.resource.synchronizer.feature_0.0.5.jar">
+
+<category name="ResourceSynchronizer"/>
+
+</feature>
+
+
+<feature version="0.0.1" id="org.seasar.sastrutsplugin.feature" url="features/org.seasar.sastrutsplugin.feature_0.0.1.jar">
+
+<category name="SAStrutsPlugin"/>
+
+</feature>
+
+
+<feature version="0.0.2" id="org.seasar.sastrutsplugin.feature" url="features/org.seasar.sastrutsplugin.feature_0.0.2.jar">
+
+<category name="SAStrutsPlugin"/>
+
+</feature>
+
+
+<feature version="0.0.3" id="org.seasar.sastrutsplugin.feature" url="features/org.seasar.sastrutsplugin.feature_0.0.3.jar">
+
+<category name="SAStrutsPlugin"/>
+
+</feature>
+
+
+<feature version="0.0.4" id="org.seasar.sastrutsplugin.feature" url="features/org.seasar.sastrutsplugin.feature_0.0.4.jar">
+
+<category name="SAStrutsPlugin"/>
+
+</feature>
+
+
+<feature version="0.0.5" id="org.seasar.sastrutsplugin.feature" url="features/org.seasar.sastrutsplugin.feature_0.0.5.jar">
+
+<category name="SAStrutsPlugin"/>
+
+</feature>
+
+
+<feature version="0.0.6" id="org.seasar.sastrutsplugin.feature" url="features/org.seasar.sastrutsplugin.feature_0.0.6.jar">
+
+<category name="SAStrutsPlugin"/>
+
+</feature>
+
+
+<feature version="0.0.7" id="org.seasar.sastrutsplugin.feature" url="features/org.seasar.sastrutsplugin.feature_0.0.7.jar">
+
+<category name="SAStrutsPlugin"/>
+
+</feature>
+
+
+<feature version="0.0.8" id="org.seasar.sastrutsplugin.feature" url="features/org.seasar.sastrutsplugin.feature_0.0.8.jar">
+
+<category name="SAStrutsPlugin"/>
+
+</feature>
+
+
+<feature version="0.0.9" id="org.seasar.sastrutsplugin.feature" url="features/org.seasar.sastrutsplugin.feature_0.0.9.jar">
+
+<category name="SAStrutsPlugin"/>
+
+</feature>
+
+
+<feature version="0.0.10" id="org.seasar.sastrutsplugin.feature" url="features/org.seasar.sastrutsplugin.feature_0.0.10.jar">
+
+<category name="SAStrutsPlugin"/>
+
+</feature>
+
+
+<feature version="0.0.11" id="org.seasar.sastrutsplugin.feature" url="features/org.seasar.sastrutsplugin.feature_0.0.11.jar">
+
+<category name="SAStrutsPlugin"/>
+
+</feature>
+
+
+<feature version="0.0.12" id="org.seasar.sastrutsplugin.feature" url="features/org.seasar.sastrutsplugin.feature_0.0.12.jar">
+
+<category name="SAStrutsPlugin"/>
+
+</feature>
+
+
+<feature version="0.0.13" id="org.seasar.sastrutsplugin.feature" url="features/org.seasar.sastrutsplugin.feature_0.0.13.jar">
+
+<category name="SAStrutsPlugin"/>
+
+</feature>
+
+
+<feature version="0.0.14" id="org.seasar.sastrutsplugin.feature" url="features/org.seasar.sastrutsplugin.feature_0.0.14.jar">
+
+<category name="SAStrutsPlugin"/>
+
+</feature>
+
+
+<feature version="0.43.1" id="org.seasar.dolteng.eclipse" url="features/org.seasar.dolteng.eclipse_0.43.1.jar">
+
+<category name="Dolteng"/>
+
+</feature>
+
+
+<feature version="0.43.0" id="org.seasar.dolteng.eclipse.dependency" url="features/org.seasar.dolteng.eclipse.dependency_0.43.0.jar">
+
+<category name="Dolteng"/>
+
+</feature>
+
+
+<feature version="1.1.12" id="org.seasar.kijimuna" url="features/org.seasar.kijimuna_1.1.12.jar">
+
+<category name="Kijimuna"/>
+
+</feature>
+
+
+<feature version="1.1.14" id="org.seasar.kijimuna" url="features/org.seasar.kijimuna_1.1.14.jar">
+
+<category name="Kijimuna"/>
+
+</feature>
+
+
+<feature version="0.9.7.200810141643" id="org.maven.ide.eclipse_light.feature" url="features/org.maven.ide.eclipse_light.feature_0.9.7.200810141643.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.1.0" id="org.seasar.s2junit4plugin.feature" url="features/org.seasar.s2junit4plugin.feature_0.1.0.jar">
+
+<category name="S2JUnit4Plugin"/>
+
+</feature>
+
+
+<feature version="0.1.1.200812151526" id="org.seasar.s2junit4plugin.feature" url="features/org.seasar.s2junit4plugin.feature_0.1.1.200812151526.jar">
+
+<category name="S2JUnit4Plugin"/>
+
+</feature>
+
+
+<feature version="0.9.7.200811301758" id="org.maven.ide.eclipse_light.feature" url="features/org.maven.ide.eclipse_light.feature_0.9.7.200811301758.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.1.0.200901060144" id="org.seasar.ymir.eclipse.feature" url="features/org.seasar.ymir.eclipse.feature_0.1.0.200901060144.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.1.1.200901081347" id="org.seasar.ymir.eclipse.feature" url="features/org.seasar.ymir.eclipse.feature_0.1.1.200901081347.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.2.0.200901161556" id="org.seasar.ymir.eclipse.feature" url="features/org.seasar.ymir.eclipse.feature_0.2.0.200901161556.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.9.7.200811301758-2009031201" id="org.maven.ide.eclipse_light.feature" url="features/org.maven.ide.eclipse_light.feature_0.9.7.200811301758-2009031201.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.0.1.200903121625" id="org.seasar.ymir.eclipse.wst_extension.feature" url="features/org.seasar.ymir.eclipse.wst_extension.feature_0.0.1.200903121625.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.2.1.200903121626" id="org.seasar.ymir.eclipse.feature" url="features/org.seasar.ymir.eclipse.feature_0.2.1.200903121626.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.2.2.200903171912" id="org.seasar.ymir.eclipse.feature" url="features/org.seasar.ymir.eclipse.feature_0.2.2.200903171912.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.3.2" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.3.2.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.3.0.200905201657" id="org.seasar.ymir.eclipse.feature" url="features/org.seasar.ymir.eclipse.feature_0.3.0.200905201657.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.1.0.200905201653" id="org.seasar.ymir.vili.template.feature" url="features/org.seasar.ymir.vili.template.feature_0.1.0.200905201653.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.4.3" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.4.3.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.1.0.200909120355" id="org.seasar.ymir.vili.template.feature" url="features/org.seasar.ymir.vili.template.feature_0.1.0.200909120355.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.4.4" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.4.4.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.1.0.200910191656" id="org.seasar.ymir.vili.template.feature" url="features/org.seasar.ymir.vili.template.feature_0.1.0.200910191656.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.1.0.200910201557" id="org.seasar.ymir.vili.template.feature" url="features/org.seasar.ymir.vili.template.feature_0.1.0.200910201557.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.4.6" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.4.6.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.1.0.200911301220" id="org.seasar.ymir.vili.template.feature" url="features/org.seasar.ymir.vili.template.feature_0.1.0.200911301220.jar">
+
+<category name="Ymir"/>
+
+</feature>
+
+
+<feature version="0.4.7" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.4.7.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.4.8" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.4.8.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.0.0" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.0.0.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.0.1" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.0.1.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.0.2" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.0.2.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.0.3" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.0.3.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.0.4" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.0.4.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.0.5" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.0.5.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.0.6" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.0.6.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.0.7" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.0.7.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.0.8" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.0.8.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.0.9" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.0.9.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.1.0" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.1.0.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.1.1" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.1.1.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.1.2" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.1.2.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.1.3" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.1.3.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.1.4" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.1.4.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.1.5" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.1.5.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.1.6" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.1.6.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.1.7" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.1.7.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.1.8" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.1.8.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.2.0" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.2.0.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.2.1" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.2.1.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.2.2" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.2.2.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.2.3" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.2.3.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.2.4" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.2.4.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.2.5" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.2.5.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.2.6" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.2.6.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.2.7" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.2.7.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.2.8" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.2.8.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.2.9" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.2.9.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.3.0" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.3.0.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.4.0" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.4.0.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.4.1" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.4.1.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.4.2" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.4.2.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.5" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.5.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+
+<feature version="0.5.6" id="org.seasar.dbflute.emecha.eclipse.feature" url="features/org.seasar.dbflute.emecha.eclipse.feature_0.5.6.jar">
+
+<category name="EMecha"/>
+
+</feature>
+
+<category-def name="SAStrutsPlugin" label="SAStrutsPlugin"/>
+
+<category-def name="Matatabi" label="Matatabi - Mayaa Plugin"/>
+
+<category-def name="ResourceSynchronizer" label="ResourceSynchronizer"/>
+
+
+<category-def name="EMecha" label="EMecha">
+
+<description> Eclipse Plugin for DBFlute. </description>
+
+</category-def>
+
+<category-def name="Dolteng" label="Dolteng"/>
+
+<category-def name="Kijimuna" label="Kijimuna"/>
+
+
+<category-def name="Ymir" label="Ymir">
+
+<description> Features for Ymir. </description>
+
+</category-def>
+
+
+<category-def name="S2JUnit4Plugin" label="S2JUnit4 Plugin">
+
+<description> S2Junit4 Plugin for Eclipse </description>
+
+</category-def>
+
+</site>
