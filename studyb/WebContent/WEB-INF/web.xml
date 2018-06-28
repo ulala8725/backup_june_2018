@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+	xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd ">
+
+	<servlet>
+		<servlet-name>B28</servlet-name>
+		<servlet-class>studyb.B28_HelloWeb_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>B28</servlet-name>
+		<url-pattern>/B28</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>B29</servlet-name>
+		<servlet-class>studyb.B29_SELECT_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>B29</servlet-name>
+		<url-pattern>/B29</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>B30</servlet-name>
+		<servlet-class>studyb.B30_SELECT_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>B30</servlet-name>
+		<url-pattern>/B30</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
