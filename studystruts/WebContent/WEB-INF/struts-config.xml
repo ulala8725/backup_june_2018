@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<!--
+This is a blank Struts configuration file with an example
+     welcome action/page and other commented sample elements.
+
+     Struts Validator is configured using the factory defaults
+     and is ready-to-use.
+
+     NOTE: If you have a generator tool to create the corresponding Java classes
+     for you, you could include the details in the "form-bean" declarations.
+     Otherwise, you would only define the "form-bean" element itself, with the
+     corresponding "name" and "type" attributes, as shown here.
+-->
+<struts-config>
+  <!-- ================================================ Form Bean Definitions -->
+  <form-beans>
+    <!--
+    sample form bean descriptor for an ActionForm
+                <form-bean
+                    name="inputForm"
+                    type="app.InputForm"/>
+            end sample  sample form bean descriptor for a DynaActionForm
+                <form-bean
+                    name="logonForm"
+                    type="org.apache.struts.action.DynaActionForm">
+                    <form-property
+                        name="username"
+                        type="java.lang.String"/>
+                    <form-property
+                        name="password"
+                        type="java.lang.String"/>
+               </form-bean>
+            end sample  beanにはデータを格納するActionFormクラスを設定します  nameは略称、typeはpathを含むファイル名です
+    -->
+    <form-bean name="TestActionForm0001" type="test.actionForm.TestActionForm0001"/>
+    
+    <form-bean name="LoginForm" type="kadai.actionForm.LoginForm"/>
+    <form-bean name="SearchForm" type="kadai.actionForm.SearchForm"/>
+    <form-bean name="EnrollForm" type="kadai.actionForm.EnrollForm"/>
+  </form-beans>
+  <!-- ========================================= Global Exception Definitions -->
+  <global-exceptions>
+  </global-exceptions>
+  <!--
+  sample exception handler
+            <exception
+                key="expired.password"
+                type="app.ExpiredPasswordException"
+                path="/changePassword.jsp"/>
+            end sample  =========================================== Global Forward Definitions
+  -->
+  <global-forwards>
+    <!-- Default forward to "Welcome" action  Demonstrates using index.jsp to forward -->
+    <forward name="welcome" path="/Welcome.do"/>
+    <forward name="TEST0001" path="/TEST0001.do"/>
+    
+    <forward name="Login" path="Login.do"/>
+    <forward name="Search" path="Search.do"/>
+    <forward name="Enroll" path="Enroll.do"/>
+  </global-forwards>
+  <!-- =========================================== Action Mapping Definitions -->
+  <action-mappings>
+    <!-- Default "Welcome" action  Forwards to Welcome.jsp -->
+    <action path="/Welcome" forward="/kadai/login.jsp"> <!-- /pages/Welcome.jsp -->
+    </action>
+    <!--
+    sample input and input submit actions
+        
+                <action
+                    path="/Input"
+                    type="org.apache.struts.actions.ForwardAction"
+                    parameter="/pages/Input.jsp"/>
+        
+                <action
+                    path="/InputSubmit"
+                    type="app.InputAction"
+                    name="inputForm"
+                    scope="request"
+                    validate="true"
+                    input="/pages/Input.jsp"/>
+        
+                    <action
+                        path="/edit*"
+                        type="app.Edit{1}Action"
+                        name="inputForm"
+                        scope="request"
+                        validate="true"
+                        input="/pages/Edit{1}.jsp"/>
+        
+            end samples  actionは実際に処理を行うActionクラスを設定します  pathはjspで指定するときの略称です（JSPにも記述あり）　　nameは使用するActionFormの略称を入れます　 typeはpathを含むファイル名です  scopeはデータ転送形式です  inputは実行されるjspです
+    -->
+    <action path="/TEST0001" name="TestActionForm0001" type="test.action.TestAction0001" scope="session" >
+      <!-- forwardは実行された後に飛んでいく次のjspを指定します  nameは飛び先のjspの略称です。pathはpathを含むファイル名です -->
+      <forward name="success" path="/pages/TEST0002.jsp"/>
+      <forward name="fail" path="/pages/TEST0001.jsp"/>
+    </action>
+    
+    <action path="/Login" name="LoginForm" type="kadai.action.Login" scope="session">
+    	<forward name="success" path="/kadai/search.jsp"/>
+    	<forward name="fail" path="/kadai/login.jsp"/>
+    </action>
+    
+    <action path="/Search" name="SearchForm" type="kadai.action.Search" scope="session">
+    	<forward name="result" path="/kadai/search.jsp"/>
+    	<forward name="logout" path="/kadai/login.jsp"/>
+    	<forward name="enroll" path="/kadai/enroll.jsp"/>
+    	<forward name="modify" path="/kadai/modify.jsp"/>
+    	<forward name="modifyConfirm" path="/kadai/modifyConfirm.jsp"/>
+    	<forward name="delete" path="/kadai/delete.jsp"/>
+    </action>
+    
+    <action path="/Enroll" name="EnrollForm" type="kadai.action.Enroll" scope="session">
+    	<forward name="return" path="/kadai/search.jsp"/>
+    	<forward name="success" path="/kadai/enrollCheck.jsp"/>
+    	<forward name="fail" path="/kadai/enroll.jsp"/>
+    </action>
+  </action-mappings>
+  <!-- ======================================== Message Resources Definitions -->
+  <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+  <message-resources parameter="MessageResources"/>
+  <!--
+  =============================================== Plug Ins Configuration  ======================================================= Tiles plugin 
+         This plugin initialize Tiles definition factory. This later can takes some
+    	 parameters explained here after. The plugin first read parameters from
+    	 web.xml, thenoverload them with parameters defined here. All parameters
+    	 are optional.
+         The plugin should be declared in each struts-config file.
+           - definitions-config: (optional)
+                Specify configuration file names. There can be several comma
+    		    separated file names (default: ?? )
+           - moduleAware: (optional - struts1.1)
+                Specify if the Tiles definition factory is module aware. If true
+                (default), there will be one factory for each Struts module.
+    			If false, there will be one common factory for all module. In this
+                later case, it is still needed to declare one plugin per module.
+                The factory will be initialized with parameters found in the first
+                initialized plugin (generally the one associated with the default
+                module).
+    			  true : One factory per module. (default)
+    			  false : one single shared factory for all modules
+    	   - definitions-parser-validate: (optional)
+    	        Specify if xml parser should validate the Tiles configuration file.
+    			  true : validate. DTD should be specified in file header (default)
+    			  false : no validation
+    
+    	  Paths found in Tiles definitions are relative to the main context.
+    
+          To use this plugin, download and add the Tiles jar to your WEB-INF/lib
+          directory then uncomment the plugin definition below.
+    
+        <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+    
+          <set-property property="definitions-config"
+                           value="/WEB-INF/tiles-defs.xml" />
+          <set-property property="moduleAware" value="true" />
+        </plug-in>
+       =================================================== Validator plugin
+  -->
+  <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+    <set-property property="pathnames" value="/org/apache/struts/validator/validator-rules.xml,                /WEB-INF/validation.xml"/>
+  </plug-in>
+  <plug-in className="org.apache.struts.tiles.TilesPlugin">
+    <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml"/>
+    <set-property property="moduleAware" value="true"/>
+  </plug-in>
+</struts-config>
