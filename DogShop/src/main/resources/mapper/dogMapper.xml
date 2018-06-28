@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.studyspring.dogshop.dao.DogMapper">
+	<select id="getDogList" parameterType="Dog" resultType="Dog">
+		select * from dog 
+		<if test="id != 0">
+		where id = #{id}
+		</if>
+	</select>
+	
+	<update id="addHit" parameterType="Dog">
+		update dog set readcount = readcount+1 where id = #{id}
+	</update>
+</mapper>
