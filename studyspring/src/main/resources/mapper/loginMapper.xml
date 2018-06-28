@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 1.login.jspで入力されたidとpasswordをDBで確認 -->
+<mapper namespace="com.study.spring.dao.LoginMapper">
+	<select id="login" parameterType="UserVO" resultType="UserVO">
+		select * from userst where id like #{id} 
+		<if test="pass != null">
+		and pass like #{pass}
+		</if>
+	</select>
+</mapper>

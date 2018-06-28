@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 1.login.jspで入力されたidとpasswordをDBで確認 -->
+<mapper namespace="com.study.spring.dao.SearchMapper">
+	<select id="searchUser" parameterType="UserVO" resultType="UserVO">
+		select u.id, name, kana, birth, club from userst u, userdetail d 
+			where u.id like #{id} 
+			<if test="name != null">
+			and name like #{name}||'%' and kana like #{kana}
+			</if>
+			and u.id = d.id
+	</select>
+	
+	<insert id="insertUser" parameterType="userVO">
+		insert all
+			into userst values (#{id}, #{pass}, #{name}, #{kana})
+			into userdetail values ((select max(no) from userdetail)+1, #{id}, #{birth}, #{club})
+		select * from dual
+	</insert>
+	
+	<update id="modifyUser" parameterType="userVO">
+		begin
+			update userst set name = #{name}, kana = #{kana} where id = #{id};
+			update userdetail set birth = #{birth}, club = #{club} where id = #{id};
+		end;
+	</update>
+	
+	<delete id="deleteUser" parameterType="String">
+		begin
+			delete from userst where id = #{id};
+			delete from userdetail where id = #{id};
+		end;
+	</delete>
+</mapper>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.study.spring.dao.BoardMapper">
+	<select id="getTotalBoard" parameterType="map" resultType="int">
+		select count(*) from board
+		<if test="searchOption == 'src_title'">
+			where title like '%'||#{searchKeyword}||'%'
+		</if>
+		<if test="searchOption == 'src_id'">
+			where id like '%'||#{searchKeyword}||'%'
+		</if>
+		<if test="searchOption == 'src_contents'">
+			where contents like '%'||#{searchKeyword}||'%'
+		</if>
+	</select>
+	
+	<select id="getBoardList" parameterType="map" resultType="BoardVO">
+		select no, title, id, to_char(write_date, 'YYYY-MM-DD HH24:MI:SS') write_date, hit
+		from board
+		<if test="searchOption == 'src_title'">
+			where title like '%'||#{searchKeyword}||'%'
+		</if>
+		<if test="searchOption == 'src_id'">
+			where id like '%'||#{searchKeyword}||'%'
+		</if>
+		<if test="searchOption == 'src_contents'">
+			where contents like '%'||#{searchKeyword}||'%'
+		</if>
+		order by no desc
+	</select>
+
+	<select id="getList" parameterType="BoardVO" resultType="BoardVO">
+		select no, title, id, to_char(write_date, 'YYYY-MM-DD HH24:MI:SS') write_date, hit 
+		<if test='no != 0'>
+		, contents, save_file, save_file_sys 
+		</if>
+		from board
+		<if test='no != 0'>
+		where no = #{no}
+		</if>
+		order by no desc
+	</select> 
+	
+	<update id="addHit" parameterType="int">
+		update board set hit = hit+1 where no = #{0}
+	</update>
+	
+	<update id="modifyBoard" parameterType="BoardVO">
+		update board set title = #{title}, contents = #{contents} where no = #{no}
+	</update>
+	
+	<delete id="deleteBoard" parameterType="int">
+		delete from board where no = #{0}
+	</delete>
+	
+	<insert id="writeBoard" parameterType="BoardVO">
+		insert into board values
+		(
+			board_seq.nextVal, #{title}, #{contents}, #{id}, sysdate, 0
+			<if test="save_file != null">
+			, #{save_file}, #{save_file_sys}
+			</if>
+			<if test="save_file == null">
+			, null, null
+			</if>
+		)
+	</insert>
+	
+	<select id="getReplyList" parameterType="BoardVO" resultType="ReplyVO">
+		select * from reply where boardNo = #{no}
+	</select>
+	
+	<insert id="writeReply" parameterType="ReplyVO">
+		insert into reply values (reply_seq.nextVal, #{boardNo}, #{comments}, #{id}, sysdate)
+	</insert>
+	
+</mapper>

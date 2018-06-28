@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.study.spring.dao.ReplyMapper">
+	<select id="getReplyList" parameterType="int" resultType="ReplyVO">
+		select * from reply where boardNo = #{0} order by no desc
+	</select>
+	
+	<insert id="writeReply" parameterType="ReplyVO">
+		insert into reply values (reply_seq.nextVal, #{boardNo}, #{comments}, #{id}, sysdate)
+	</insert>
+	
+	<update id="modifyReply" parameterType="ReplyVO">
+		update reply set comments = #{comments} where no = #{no}
+	</update>
+	
+	<delete id="deleteReply" parameterType="ReplyVO">
+		delete from reply where no = #{no}
+	</delete>
+	
+	<select id="getTotalReply" parameterType="int" resultType="int">
+		select count(*) from reply where boardNo = #{0} 
+	</select>
+	
+</mapper>
