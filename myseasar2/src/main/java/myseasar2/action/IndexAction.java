@@ -16,12 +16,14 @@
 package myseasar2.action;
 
 import org.seasar.struts.annotation.Execute;
-
 public class IndexAction {
 	
     @Execute(validator = false)
 	public String index() {
 //    	return "login/login.jsp"; // index.jsp
-        return "sample/webStorage_ex.jsp"; // index.jsp
+//        return "sample/webStorage_ex.jsp"; // index.jsp
+//    	return "sample/html5_form_ex.jsp"; // index.jsp
+//        return "sample/checkInputEle_ex.jsp"; // index.jsp
+        return "sample/googlemap_ex.jsp"; // index.jsp
 	}
 }

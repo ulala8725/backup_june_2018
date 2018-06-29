@@ -1,4 +1,7 @@
 eclipse.preferences.version=1
+encoding//src/main/webapp/WEB-INF/view/sample/checkInputEle_ex.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/view/sample/dataTransfer_ex.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/sample/googlemap_ex.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/sample/html5_form_ex.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/view/sample/webStorage_ex.jsp=UTF-8
 encoding/<project>=UTF-8

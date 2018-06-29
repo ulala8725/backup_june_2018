@@ -55,7 +55,7 @@
           var time = new Date().getTime();
           localStorage.setItem(time, msgElement.value);
           msgElement.value = "";
-
+	      
           loadMsg();
       }
 
@@ -64,8 +64,8 @@
           localStorage.clear();
           loadMsg();
       }
-      window.onload = localStorage.clear();
-//       window.onload = loadMsg();
+//       window.onload = localStorage.clear();
+      window.onload = loadMsg();
   </script>
 </body>
 </html>
